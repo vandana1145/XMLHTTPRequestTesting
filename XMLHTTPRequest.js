@@ -1,7 +1,8 @@
-console.log(window)
+// console.log(window)
 
+var XMLHttpRequest = require('xhr2');
 const request = new XMLHttpRequest();
-request.open("GET", "http://localhost:8282/cutomers");
+request.open("GET", "http://localhost:8282/customers");
 request.send();
 
 request.onload = () => {
